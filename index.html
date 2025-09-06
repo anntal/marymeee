@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>My Portfolio</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="header">
+         <div class="container">
+            <nav>
+               <img src="" class="logo">
+               <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+               <ul id="sidemenu">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+               </ul>
+            </nav>
+            <img src="ann22.jpg" alt="Header Image" class="header-img">
+            <div class="header-text">
+               <p>Web Developer</p>
+               <h1>Hi, I'm <span>Mary Ann</span><br>From Philippines</h1>
+            </div>
+         </div>
+      </div>
+      <!-- This is an About -->
+      <div id="about">
+         <div class="container">
+            <div class="row">
+               <div class="about-col-1" data-aos="fade-right" data-aos-duration="1000">
+                  <img src="may01.jpg" alt="Profile Image">
+               </div>
+               <div class="about-col-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                  <h1 class="sub-title">About Me</h1>
+                  <p>
+                     As a web developer, my goal is to create visually appealing and user-friendly web interfaces 
+                     (front-end development) while also focusing on back-end development to handle data efficiently. 
+                     I aim to apply my skills in HTML, CSS, JavaScript, and server-side technologies to build innovative 
+                     and responsive full-stack applications.
+                  </p>
+                  <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                     <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                     <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                     <ul>
+                        <li>
+                           <span>Version Control</span><br>
+                           Managing code smoothly with Git and GitHub
+                        </li>
+                        <li>
+                           <span>Web Development</span><br>
+                           Creating fast and user-friendly web apps
+                        </li>
+                        <li>
+                           <span>App Development</span><br>
+                           Building apps that work on Android and iOS
+                        </li>
+                        <li>
+                           <span>Backend Development</span><br>
+                           Building reliable servers and APIs
+                        </li>
+                        <li>
+                           <span>Database Management</span><br>
+                           Efficiently storing and organizing data for applications
+                        </li>
+                        <li>
+                           <span>Testing & Debugging</span><br>
+                           Finding and fixing bugs for smoother apps
+                        </li>
+                        <li>
+                           <span>Deployment</span><br>
+                           Launching apps and websites on the internet
+                        </li>
+                        <li>
+                           <span>Responsive Design</span><br>
+                           Making sure websites work on all devices
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                     <ul>
+                        <li><span>2022-2025-Present</span><br>Full-stack Developer(Frontend/Backend)</li>
+                        <li><span>February-June 2025</span><br>IT Monitoring of Knowles Training Institute</li>
+                        <li>60 Paya Lebar Rd, #07-54 Paya Lebar Square, Singapore 409051</li>
+                     </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                     <ul>
+                        <li><span>2020-2025</span><br>Bachelor of Science in Information Technology from Cebu Technological University</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- This is Services -->
+      <div id="services">
+         <div class="container">
+            <h1 class="sub-title" data-aos="fade-right" data-aos-duration="1000"data-aos-delay="100">My Services</h1>
+            <div class="services-list">
+               <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                  <i class="fa-brands fa-square-github"></i>
+                  <h2>Version Control</h2>
+                  <p>I manage code smoothly using Git and GitHub while creating fast 
+                     and user-friendly web applications.
+                  </p>
+                  <a</a>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                  <i class="fa-solid fa-crop-simple"></i>
+                  <h2>Web Development</h2>
+                  <p>Knowledgeable in building backend servers and organizing data to keep websites running smoothly.</p>
+                  <a</a>
+               </div>
+               <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                  <i class="fa-brands fa-app-store"></i>
+                  <h2>Testing/Debugging</h2>
+                  <p>Proficient in finding and fixing errors to ensure apps and websites run smoothly.</p>
+                  <a</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- This is an portfolio -->
+      <!-- ===== PORTFOLIO ===== -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work"> 
+            <div class="flip-inner"> 
+              <div class="flip-back"> 
+                <img src="mary21.jpg" alt="Project Image"> 
+              </div> 
+              <div class="flip-front"> 
+                <h3></h3> 
+                <p></p> 
+                <a</a> 
+              </div> 
+            </div> 
+          </div> 
+          <div class="work"> 
+            <div class="flip-inner"> 
+              <div class="flip-back"> 
+                <img src="mary22.jpg" alt="Project Image"> 
+              </div> 
+              <div class="flip-front"> 
+                <h3></h3> 
+                <p></p> 
+                <a</a> 
+              </div> 
+            </div> 
+          </div> 
+          <div class="work"> 
+            <div class="flip-inner"> 
+              <div class="flip-back"> 
+                <img src="mary23.jpg" alt="Project Image"> 
+              </div> 
+              <div class="flip-front"> 
+                <h3></h3> 
+                <p></p> 
+                <a</a> 
+              </div> 
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TOOLS & PLATFORMS ===== -->
+    <div id="tools">
+      <div class="container">
+        <h1 class="sub-title">Tools & Platforms</h1>
+        <div class="tools-grid">
+          <img src="ry01.jpg" alt="HTML">
+          <img src="ry02.jpg" alt="CSS">
+          <img src="ry03.jpg" alt="Node.js">
+          <img src="ry05.jpg" alt="Git">
+          <img src="ry06.jpg" alt="GitHub">
+          <img src="ry07.jpg" alt="JavaScript">
+          <img src="ry08.jpg" alt="Facebook">
+          <img src="ry09.jpg" alt="Instagram">
+          <img src="ry10.jpg" alt="Canva">
+          <img src="ry11.png" alt="Excel">
+          <img src="ry12.jpg" alt="Microsoft Word">
+          <img src="ry13.jpg" alt="WhatsApp">
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== CERTIFICATES ===== -->
+    <div id="certificate">
+      <div class="container">
+        <h1 class="sub-title">My Certificate</h1>
+        <div class="cert-grid">
+          <img src="may16.jpg" alt="DICT Certificate">
+          <img src="may18.jpg" alt="Other Certificate">
+        </div>
+      </div>
+    </div>
+
+      
+      <!-- This is an contact -->
+      <div id="contact">
+         <div class="container">
+            <div class="row">
+               <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><i class="fa-solid fa-paper-plane"></i>anntal792@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i>09616213459</p>
+                  <div class="social-icons">
+                     <a href=""><i class="fa-brands fa-facebook"></i></a>
+                     <a href=""><i class="fa-brands fa-instagram"></i></a>
+                     <a href="https://www.linkedin.com/in/mary-ann-taladro-3361332a5/" target="_blank">
+                     <i class="fa-brands fa-linkedin"></i>
+                     </a>
+                  </div>
+                  <a href="Taladro, Mary Ann-CV.pdf" download class="btn btn2">Download CV</a>
+               </div>
+               <div class="contact-right">
+                  <form name="submit-to-google-sheet">
+                     <input type="text" name="Name" placeholder="Your Name" required>
+                   
+                     <!-- use type="email" instead of text -->
+                     <input type="email" name="email" placeholder="Enter Gmail only" required>
+                     <p id="msg"></p>
+                   
+                     <textarea name="Message" rows="6" placeholder="Your Message(Optional)"></textarea>
+                     <button type="submit" class="btn btn2">Submit</button>
+                   </form>
+                   
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ================== SCRIPTS ================== -->
+      <script>
+         document.addEventListener("DOMContentLoaded", function() {
+           // ================== Mobile nav ==================
+           const sidemenu = document.getElementById("sidemenu");
+         
+           window.openMenu = function() {
+             sidemenu.style.right = "0";
+           }
+         
+           window.closeMenu = function() {
+             sidemenu.style.right = "-200px";
+           }
+         
+           // ================== Tabs ==================
+           const tablinks = document.getElementsByClassName("tab-links");
+           const tabcontents = document.getElementsByClassName("tab-contents");
+         
+           window.opentab = function(event, tabname) {
+             for (let i = 0; i < tablinks.length; i++) {
+               tablinks[i].classList.remove("active-link");
+             }
+             for (let i = 0; i < tabcontents.length; i++) {
+               tabcontents[i].classList.remove("active-tab");
+             }
+             event.currentTarget.classList.add("active-link");
+             document.getElementById(tabname).classList.add("active-tab");
+           }
+         
+           // ================== Google Sheet form ==================
+           const scriptURL = 'https://script.google.com/macros/s/AKfycbxFYfT1Z4hO3LEVU5VTi6_d3pRQlWx41oPDq0YYnLCatk-LyHJZntXEgOZar2pgKOI/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("msg");
+
+if (form) {
+  const emailInput = form.querySelector('input[name="email"]'); 
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const emailValue = emailInput.value.trim();
+    const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+    msg.innerHTML = ""; 
+    msg.className = ""; 
+
+    // Empty email check
+    if (emailValue === "") {
+      msg.innerHTML = "⚠️ You must enter an email address.";
+      msg.className = "error";
+      return;
+    }
+
+    // Invalid Gmail format check
+    if (!gmailRegex.test(emailValue)) {
+      msg.innerHTML = "❌ You must enter a valid Gmail address.";
+      msg.className = "error";
+      return;
+    }
+
+    // If valid Gmail → submit
+    fetch(scriptURL, {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(() => {
+      msg.innerHTML = "✅ Message sent successfully!";
+      msg.className = "success";
+      setTimeout(() => msg.innerHTML = "", 5000);
+      form.reset();
+    })
+    .catch(error => {
+      msg.innerHTML = "❌ Something went wrong. Please try again.";
+      msg.className = "error";
+      console.error('Error!', error.message);
+    });
+  });
+}
+
+
+
+
+    
+
+
+         
+           // ================== Flip cards ==================
+           function isInViewport(element) {
+             const rect = element.getBoundingClientRect();
+             return rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                   rect.bottom >= 0;
+           }
+         
+           function checkFlip() {
+             document.querySelectorAll('.work').forEach(work => {
+               if (isInViewport(work)) {
+                 work.classList.add('flipped');
+               } else {
+                 work.classList.remove('flipped');
+               }
+             });
+           }
+         
+           window.addEventListener('scroll', checkFlip);
+           window.addEventListener('load', checkFlip);
+         });
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      <script>
+         AOS.init({ once: true });
+      </script>
+   </body>
+</html>
